@@ -1,59 +1,71 @@
 /********** defaults for all characters all font sizes **********/
 
+@background-color: #EEE;
+@font-color: #000;
 
-.standard .css_char .fill { background: #000; }
-.standard .css_char .neg { background: #EEE; }
-.standard .css_char .stroke,
-.standard .css_char .neg_stroke,
-.standard .css_char .split_vert,
-.standard .css_char .split_horiz,
-.standard .css_char .split_horiz_pos,
-.standard .css_char .split_horiz_neg { border: 0px solid; }
-.standard .css_char .stroke { border-color: #000; }
-.standard .css_char .split_vert { border-color: #000 transparent; }
-.standard .css_char .split_horiz { border-color: #EEE transparent; }
-.standard .css_char .split_horiz_pos { border-color: transparent #000; }
-.standard .css_char .split_horiz_neg { border-color: transparent #EEE; }
+@inspect-positive-color: hsla(0,100%,50%, .4);
+@inspect-negative-color: fade( spin(@inspect-positive-color, 240), 15%);
 
 
-.inspect { background: url(grid.png); }
+.standard .css_char {
+    text-indent: -9999px;
 
-.inspect * { background: hsla(0,100%,50%,.07); }
+    .fill { background: @font-color; }
+    .neg { background: @background-color; }
 
-.inspect .css_char .fill { background: hsla(0,100%,50%,.4); }
-.inspect .css_char .neg { background: hsla(240,50%,50%,.15); }
-.inspect .css_char .stroke,
-.inspect .css_char .neg_stroke,
-.inspect .css_char .split_vert,
-.inspect .css_char .split_horiz,
-.inspect .css_char .split_horiz_pos,
-.inspect .css_char .split_horiz_neg { border: 0px solid; }
-.inspect .css_char .stroke { border-color: hsla(0,100%,50%,.4); }
-.inspect .css_char .split_vert { border-color: hsla(0,100%,50%,.4) transparent; }
-.inspect .css_char .split_horiz { border-color: hsla(240,50%,50%,.15) transparent; }
-.inspect .css_char .split_horiz_pos { border-color: transparent hsla(0,100%,50%,.4); }
-.inspect .css_char .split_horiz_neg { border-color: transparent hsla(240,50%,50%,.15); }
+    .stroke,
+    .neg_stroke,
+    .split_vert,
+    .split_horiz,
+    .split_horiz_pos,
+    .split_horiz_neg { border: 0px solid; }
+
+    .stroke { border-color: @font-color; }
+    .split_vert { border-color: @font-color transparent; }
+    .split_horiz { border-color: @background-color transparent; }
+    .split_horiz_pos { border-color: transparent @font-color; }
+    .split_horiz_neg { border-color: transparent @background-color; }
+}
+
+
+.inspect {
+    background: url(grid.png);
+    text-indent: 0;
+    * { background: fade(@inspect-positive-color, 7%); }
+
+    .css_char {
+        .fill { background: @inspect-positive-color; }
+        .neg { background: @inspect-negative-color; }
+        .stroke,
+        .neg_stroke,
+        .split_vert,
+        .split_horiz,
+        .split_horiz_pos,
+        .split_horiz_neg { border: 0px solid; }
+        .stroke { border-color: @inspect-positive-color; }
+        .split_vert { border-color: @inspect-positive-color transparent; }
+        .split_horiz { border-color: @inspect-negative-color transparent; }
+        .split_horiz_pos { border-color: transparent @inspect-positive-color; }
+        .split_horiz_neg { border-color: transparent @inspect-negative-color; }
+    }
+}
+
 
 .css_char {
-  position: relative;
-  height: 140px;
-  display: block;
-  float: left;
-  overflow: hidden;
-  margin: 0 5px 20px 0;
-}
-.standard .css_char { text-indent: -9999px; }
-.inspect .css_char { text-indent: 0; }
+    position: relative;
+    display: block;
+    float: left;
+    overflow: hidden;
 
-
-.css_char span {
-  display: block;
-  position: absolute;
-  text-indent: -9999px;
-  width: 0px;
-  height: 0px;
-  top: 0;
-  left: 0;
+    span {
+        display: block;
+        position: absolute;
+        text-indent: -9999px;
+        width: 0px;
+        height: 0px;
+        top: 0;
+        left: 0;
+    }
 }
 
 .word {
