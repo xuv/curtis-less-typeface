@@ -5,7 +5,9 @@
 
   <title>Curtis CSS Typeface</title>
 
-  <link rel="stylesheet" href="curtis.css" />
+  <link rel="stylesheet" type="text/css" href="layout.css" />
+  <link rel="stylesheet/less" type="text/css" href="curtis.less" />
+
 
 </head>
 <body>
@@ -578,6 +580,17 @@ $(function(){
 
 });
 </script>
+
+
+<!-- set options before less.js script -->
+<script>
+  less = {
+    env: "development"
+  };
+</script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/1.7.0/less.min.js"></script>
+<script>less.watch();</script>
+
 
 </div>
 
