@@ -1,16 +1,93 @@
 /*** Recreating the default curtis.css file by Dave DeSandro ***/
 
+/*
 // standard class
 @color-selector: standard;
 @background-color: none;
 @positive-color: #000;
 @negative-color: #EEE;
 
+
 // inspect class
 @color-selector: inspect;
 @background-color: hsla(0,100%,50%, .07);
 @positive-color: hsla(0,100%,50%, .4);
 @negative-color: fade( spin(@positive-color, 240), 15%);
+*/
+
+/*** Styles for the demo page ***/
+
+body {
+  background: #EEE;
+  font-family: sans-serif;
+  line-height: 1.45;
+}
+
+p, ul {
+  margin-top: 0;
+}
+
+#content {
+  padding: 40px;
+
+}
+
+h1 {
+  height: 60px;
+  margin-bottom: 40px;
+}
+
+.gone { display: none;}
+
+fieldset {
+  clear: both;
+  margin-bottom: 10px;
+  border: 1px solid #CCC;
+  padding: 4px 0 4px 20px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 0.5em;
+}
+
+label {
+}
+
+#content fieldset ul { padding: 0; margin-bottom: 10px; }
+
+#content fieldset li {
+  display: inline;
+  list-style: none;
+  margin: 0 20px 0 0;
+}
+
+#copy {
+  width: 520px;
+  margin-right: 60px;
+  float: left;
+  clear: both;
+}
+
+#options {
+  width: 360px;
+  float: left;
+}
+
+#options .curtis {
+  height: 280px;
+}
+
+.curtis {
+  clear: both;
+}
+
+#demo {margin-top: 20px;}
+
+/*** Styles for demo page font ***/
 
 .color-mixin(@color-selector, @background-color, @positive-color, @negative-color){
     @import "font-color.less";
