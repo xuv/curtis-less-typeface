@@ -32,63 +32,67 @@
 /********** font size @{shape-selector} **********/
 
 .@{shape-selector} .css_char {
-  height: @font-size;
-  margin: 0 @tracking @line-spacing 0;
+    height: @font-size;
+    margin: 0 @tracking @line-spacing 0;
 }
 
 
 /***** A *****/
 
-.@{shape-selector} .css_char.a {  width: @font-size; }
+.@{shape-selector} .css_char.a {
+    width: @font-size;
 
-.@{shape-selector} .css_char.a .outside { border-width: 0 (@grid * 14) @font-size; }
+    .outside { border-width: 0 (@grid * 14) @font-size; }
 
-.@{shape-selector} .css_char.a .inside {
-  border-width: 0 (@grid * 6) (@grid * 12);
-  top: (@grid * 18);
-  left: (@grid * 8);
-}
+    .inside {
+        border-width: 0 (@grid * 6) (@grid * 12);
+        top: (@grid * 18);
+        left: (@grid * 8);
+    }
 
-.@{shape-selector} .css_char.a .bar {
-  width: (@grid * 12);
-  height: (@grid * 4);
-  top: (@grid * 22);
-  left: (@grid * 8);
+    .bar {
+        width: (@grid * 12);
+        height: (@grid * 4);
+        top: (@grid * 22);
+        left: (@grid * 8);
+    }
 }
 
 /**** B *****/
 
-.@{shape-selector} .css_char.b { width: (@grid * 20); }
+.@{shape-selector} .css_char.b {
+    width: (@grid * 20);
 
-.@{shape-selector} .css_char.b .top.fill,
-.@{shape-selector} .css_char.b .bottom.fill {
-  width: (@grid * 20);
-  height: (@grid * 18);
-  border-width: 0px;
-  border-top-right-radius: (@grid * 9);
-  border-bottom-right-radius: (@grid * 9);
-  -moz-border-radius-topright: (@grid * 9);
-  -moz-border-radius-bottomright: (@grid * 9);
-  -webkit-border-top-right-radius: (@grid * 9);
-  -webkit-border-bottom-right-radius: (@grid * 9);
+    .top.fill,
+    .bottom.fill {
+        width: (@grid * 20);
+        height: (@grid * 18);
+        border-width: 0px;
+        border-top-right-radius: (@grid * 9);
+        border-bottom-right-radius: (@grid * 9);
+        -moz-border-radius-topright: (@grid * 9);
+        -moz-border-radius-bottomright: (@grid * 9);
+        -webkit-border-top-right-radius: (@grid * 9);
+        -webkit-border-bottom-right-radius: (@grid * 9);
+    }
+
+    .bottom.fill { top: (@grid * 10); }
+
+    .top.neg,
+    .bottom.neg {
+        width: (@grid * 4);
+        height: (@grid * 3);
+        left: (@grid * 8);
+        border-top-right-radius: (@grid * 1.5);
+        border-bottom-right-radius: (@grid * 1.5);
+        -moz-border-radius-topright: (@grid * 1.5);
+        -moz-border-radius-bottomright: (@grid * 1.5);
+        -webkit-border-top-right-radius: (@grid * 1.5);
+        -webkit-border-bottom-right-radius: (@grid * 1.5);
+    }
+    .top.neg { top: (@grid * 8); }
+    .bottom.neg { top: (@grid * 17); }
 }
-.@{shape-selector} .css_char.b .bottom.fill { top: (@grid * 10); }
-
-.@{shape-selector} .css_char.b .top.neg,
-.@{shape-selector} .css_char.b .bottom.neg {
-  width: (@grid * 4);
-  height: (@grid * 3);
-  left: (@grid * 8);
-  border-top-right-radius: (@grid * 1.5);
-  border-bottom-right-radius: (@grid * 1.5);
-  -moz-border-radius-topright: (@grid * 1.5);
-  -moz-border-radius-bottomright: (@grid * 1.5);
-  -webkit-border-top-right-radius: (@grid * 1.5);
-  -webkit-border-bottom-right-radius: (@grid * 1.5);
-}
-.@{shape-selector} .css_char.b .top.neg { top: (@grid * 8); }
-.@{shape-selector} .css_char.b .bottom.neg { top: (@grid * 17); }
-
 
 /***** C, D, G, O & Q *****/
 
@@ -103,202 +107,212 @@
 .@{shape-selector} .css_char.d .stroke,
 .@{shape-selector} .css_char.g .outside,
 .@{shape-selector} .css_char.q .stroke {
-  width: (@grid * 12);
-  height: (@grid * 12);
-  border-width: (@grid * 8);
-  border-radius: (@grid * 14);
-  -moz-border-radius: (@grid * 14);
-  -webkit-border-radius: (@grid * 14);
+    width: (@grid * 12);
+    height: (@grid * 12);
+    border-width: (@grid * 8);
+    border-radius: (@grid * 14);
+    -moz-border-radius: (@grid * 14);
+    -webkit-border-radius: (@grid * 14);
 }
 
 .@{shape-selector} .css_char.d .stroke {
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-  -moz-border-radius-topleft: 0px;
-  -moz-border-radius-bottomleft: 0px;
-  -webkit-border-top-left-radius: 0px;
-  -webkit-border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    -moz-border-radius-topleft: 0px;
+    -moz-border-radius-bottomleft: 0px;
+    -webkit-border-top-left-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
 }
 
 .@{shape-selector} .css_char.c .neg,
 .@{shape-selector} .css_char.g .neg {
-  width: (@grid * 14);
-  height: (@grid * 4);
-  top: (@grid * 12);
-  left: (@grid * 14);
+    width: (@grid * 14);
+    height: (@grid * 4);
+    top: (@grid * 12);
+    left: (@grid * 14);
 }
 
 
 .@{shape-selector} .css_char.g .spur {
-  width: (@grid * 4);
-  border-width: (@grid * 12) 0 0 (@grid * 6);
-  top: (@grid * 16);
-  left: (@grid * 18);
+    width: (@grid * 4);
+    border-width: (@grid * 12) 0 0 (@grid * 6);
+    top: (@grid * 16);
+    left: (@grid * 18);
 }
 
 .@{shape-selector} .css_char.q .cross_left,
 .@{shape-selector} .css_char.q .cross_right {
-  width: 0px;
-  top: (@grid * 16);
+    width: 0px;
+    top: (@grid * 16);
 }
 .@{shape-selector} .css_char.q .cross_left {
-  border-width: (@grid * 12) 0 0 (@grid * 6);
-  left: (@grid * 14);
+    border-width: (@grid * 12) 0 0 (@grid * 6);
+    left: (@grid * 14);
 }
 
 .@{shape-selector} .css_char.q .cross_right {
-  border-width: 0 (@grid * 6) (@grid * 12) 0;
-  left: (@grid * 20);
+    border-width: 0 (@grid * 6) (@grid * 12) 0;
+    left: (@grid * 20);
 }
 
 /***** E & F *****/
 
-.@{shape-selector} .css_char.e, .@{shape-selector} .css_char.f { width: (@grid * 20); }
+.@{shape-selector} .css_char.e,
+.@{shape-selector} .css_char.f {
+    width: (@grid * 20);
+
+    .fill {
+        height: (@grid * 6);
+        width: (@grid * 12);
+        top: (@grid * 11);
+        left: (@grid * 6);
+    }
+}
 
 .@{shape-selector} .css_char.e .stroke {
-  height: (@grid * 12);
-  width: (@grid * 12);
-  border-width: (@grid * 8) 0 (@grid * 8) (@grid * 8);
+    height: (@grid * 12);
+    width: (@grid * 12);
+    border-width: (@grid * 8) 0 (@grid * 8) (@grid * 8);
 }
 
 .@{shape-selector} .css_char.f .stroke {
-  height: (@grid * 20);
-  width: (@grid * 12);
-  border-width: (@grid * 8) 0 0 (@grid * 8);
-}
-
-.@{shape-selector} .css_char.e .fill,
-.@{shape-selector} .css_char.f .fill {
-  height: (@grid * 6);
-  width: (@grid * 12);
-  top: (@grid * 11);
-  left: (@grid * 6);
+    height: (@grid * 20);
+    width: (@grid * 12);
+    border-width: (@grid * 8) 0 0 (@grid * 8);
 }
 
 
-
-.@{shape-selector} .css_char.v .inside,
-.@{shape-selector} .css_char.w .inside_left { left: (@grid * 8); }
-
-.@{shape-selector} .css_char.w .inside_right { left: (@grid * 18); }
 
 
 /***** H *****/
 
-.@{shape-selector} .css_char.h { width: (@grid * 20); }
+.@{shape-selector} .css_char.h {
+    width: (@grid * 20);
 
-.@{shape-selector} .css_char.h .top,
-.@{shape-selector} .css_char.h .bottom {
-  width: (@grid * 4);
-  height: (@grid * 11);
-}
-.@{shape-selector} .css_char.h .top { border-width: 0 (@grid * 8) (@grid * 4); }
-.@{shape-selector} .css_char.h .bottom {
-  border-width: (@grid * 4) (@grid * 8) 0;
-  top: (@grid * 13);
+    .top,
+    .bottom {
+        width: (@grid * 4);
+        height: (@grid * 11);
+    }
+
+    .top { border-width: 0 (@grid * 8) (@grid * 4); }
+
+    .bottom {
+        border-width: (@grid * 4) (@grid * 8) 0;
+        top: (@grid * 13);
+    }
 }
 
 /***** I *****/
 
-.@{shape-selector} .css_char.i { width: (@grid * 8); }
+.@{shape-selector} .css_char.i {
+    width: (@grid * 8);
 
-.@{shape-selector} .css_char.i .fill {
-  width: (@grid * 8);
-  height: @font-size;
+    .fill {
+        width: (@grid * 8);
+        height: @font-size;
+    }
 }
 
 /***** U & J *****/
 
 .@{shape-selector} .css_char.u,
-.@{shape-selector} .css_char.j { width: (@grid * 22); }
+.@{shape-selector} .css_char.j {
+    width: (@grid * 22);
 
-.@{shape-selector} .css_char.u .stroke,
-.@{shape-selector} .css_char.j .stroke {
-  width: (@grid * 6);
-  height: (@grid * 20);
-  border-width: 0 (@grid * 8) (@grid * 8);
-  border-bottom-left-radius: (@grid * 11);
-  border-bottom-right-radius: (@grid * 11);
-  -moz-border-radius-bottomleft: (@grid * 11);
-  -moz-border-radius-bottomright: (@grid * 11);
-  -webkit-border-bottom-left-radius: (@grid * 11);
-  -webkit-border-bottom-right-radius: (@grid * 11);
+    .stroke {
+        width: (@grid * 6);
+        height: (@grid * 20);
+        border-width: 0 (@grid * 8) (@grid * 8);
+        border-bottom-left-radius: (@grid * 11);
+        border-bottom-right-radius: (@grid * 11);
+        -moz-border-radius-bottomleft: (@grid * 11);
+        -moz-border-radius-bottomright: (@grid * 11);
+        -webkit-border-bottom-left-radius: (@grid * 11);
+        -webkit-border-bottom-right-radius: (@grid * 11);
+    }
 }
 
 .@{shape-selector} .css_char.j .neg {
-  width: (@grid * 12);
-  height: (@grid * 16);
-  left: (@grid * -2);
+    width: (@grid * 12);
+    height: (@grid * 16);
+    left: (@grid * -2);
 }
 
 /***** K *****/
 
-.@{shape-selector} .css_char.k { width: (@grid * 22); }
+.@{shape-selector} .css_char.k {
+    width: (@grid * 22);
 
-.@{shape-selector} .css_char.k .split_vert {
-  width: (@grid * 15);
-  border-width: (@grid * 14) (@grid * 7) (@grid * 14) 0;
-}
+    .split_vert {
+        width: (@grid * 15);
+        border-width: (@grid * 14) (@grid * 7) (@grid * 14) 0;
+    }
 
-.@{shape-selector} .css_char.k .split_horiz {
-  height: (@grid * 8);
-  border-width: (@grid * 12) (@grid * 6) (@grid * 12) 0;
-  left: (@grid * 8);
-  top: (@grid * -2);
+    .split_horiz {
+        height: (@grid * 8);
+        border-width: (@grid * 12) (@grid * 6) (@grid * 12) 0;
+        left: (@grid * 8);
+        top: (@grid * -2);
+    }
 }
 
 /***** L *****/
 
-.@{shape-selector} .css_char.l { width: (@grid * 20); }
+.@{shape-selector} .css_char.l {
+    width: (@grid * 20);
 
-.@{shape-selector} .css_char.l .stroke {
-  width: (@grid * 12);
-  height: (@grid * 20);
-  border-width: 0 0 (@grid * 8) (@grid * 8);
+    .stroke {
+        width: (@grid * 12);
+        height: (@grid * 20);
+        border-width: 0 0 (@grid * 8) (@grid * 8);
+    }
 }
-
 
 
 /***** M *****/
 
-.@{shape-selector} .css_char.m { width: @font-size; }
+.@{shape-selector} .css_char.m {
+    width: @font-size;
 
-.@{shape-selector} .css_char.m .split_horiz_pos {
-  height: (@grid * 16);
-  border-width: (@grid * 14) (@grid * 14) 0;
-}
+    .split_horiz_pos {
+        height: (@grid * 16);
+        border-width: (@grid * 14) (@grid * 14) 0;
+    }
 
-.@{shape-selector} .css_char.m .split_horiz_neg {
-  height: (@grid * 4);
-  border-width: (@grid * 6) (@grid * 6) 0;
-  top: (@grid * 19);
-  left: (@grid * 8);
+    .split_horiz_neg {
+        height: (@grid * 4);
+        border-width: (@grid * 6) (@grid * 6) 0;
+        top: (@grid * 19);
+        left: (@grid * 8);
+    }
 }
 
 /***** N *****/
 
-.@{shape-selector} .css_char.n { width: (@grid * 24); }
+.@{shape-selector} .css_char.n {
+    width: (@grid * 24);
 
-.@{shape-selector} .css_char.n .top_corner {
-  border-width: 0 (@grid * 20) (@grid * 15) 0;
-  top: (@grid * -3);
-  left: (@grid * -4);
+    .top_corner {
+        border-width: 0 (@grid * 20) (@grid * 15) 0;
+        top: (@grid * -3);
+        left: (@grid * -4);
+    }
+
+    .bottom_corner {
+        border-width: (@grid * 15) 0 0 (@grid * 20);
+        top: (@grid * 16);
+        left: (@grid * 8);
+    }
+
+    .fill {
+        width: (@grid * 24);
+        height: @font-size;
+    }
+
+    .left_leg { top: (@grid * 12); }
+    .right_leg { left: (@grid * 16); }
 }
-
-.@{shape-selector} .css_char.n .bottom_corner {
-  border-width: (@grid * 15) 0 0 (@grid * 20);
-  top: (@grid * 16);
-  left: (@grid * 8);
-}
-
-.@{shape-selector} .css_char.n .fill {
-  width: (@grid * 24);
-  height: @font-size;
-}
-
-.@{shape-selector} .css_char.n .left_leg { top: (@grid * 12); }
-.@{shape-selector} .css_char.n .right_leg { left: (@grid * 16); }
-
 
 /***** R  & P *****/
 
@@ -306,56 +320,56 @@
 .@{shape-selector} .css_char.p { width: (@grid * 20); }
 
 .@{shape-selector} .css_char.r .inside {
-  width: (@grid * 2);
-  border-width: (@grid * 12) 0 0 (@grid * 6);
-  top: (@grid * 16);
-  left:  (@grid * 6);
+    width: (@grid * 2);
+    border-width: (@grid * 12) 0 0 (@grid * 6);
+    top: (@grid * 16);
+    left:  (@grid * 6);
 }
 
 .@{shape-selector} .css_char.r .outside {
-  width: (@grid * 2);
-  border-width: 0 (@grid * 6) (@grid * 12) 0px;
-  top: (@grid * 16);
-  left: (@grid * 13);
+    width: (@grid * 2);
+    border-width: 0 (@grid * 6) (@grid * 12) 0px;
+    top: (@grid * 16);
+    left: (@grid * 13);
 }
 
 .@{shape-selector} .css_char.r .stroke,
 .@{shape-selector} .css_char.p .stroke {
-  width: (@grid * 8);
-  height: (@grid * 4);
-  border-width: (@grid * 8) (@grid * 8) (@grid * 8) 0;
-  left: (@grid * 4);
-  border-top-right-radius: (@grid * 10);
-  border-bottom-right-radius: (@grid * 10);
-  -moz-border-radius-topright: (@grid * 10);
-  -moz-border-radius-bottomright: (@grid * 10);
-  -webkit-border-top-right-radius: (@grid * 10);
-  -webkit-border-bottom-right-radius: (@grid * 10);
+    width: (@grid * 8);
+    height: (@grid * 4);
+    border-width: (@grid * 8) (@grid * 8) (@grid * 8) 0;
+    left: (@grid * 4);
+    border-top-right-radius: (@grid * 10);
+    border-bottom-right-radius: (@grid * 10);
+    -moz-border-radius-topright: (@grid * 10);
+    -moz-border-radius-bottomright: (@grid * 10);
+    -webkit-border-top-right-radius: (@grid * 10);
+    -webkit-border-bottom-right-radius: (@grid * 10);
 }
 
 .@{shape-selector} .css_char.r .fill,
 .@{shape-selector} .css_char.p .fill {
-  width: (@grid * 8);
-  height: @font-size;
+    width: (@grid * 8);
+    height: @font-size;
 }
 
 /***** S & some of ? *****/
 
 .@{shape-selector} .css_char.s,
 .@{shape-selector} .css_char.question {
-  width: (@grid * 18);
+    width: (@grid * 18);
 }
 
 .@{shape-selector} .css_char.s .top_circle,
 .@{shape-selector} .css_char.s .bottom_circle,
 .@{shape-selector} .css_char.s .right .stroke,
 .@{shape-selector} .css_char.question .stroke {
-  width: (@grid * 2);
-  height: (@grid * 2);
-  border-width: (@grid * 8);
-  border-radius: (@grid * 9);
-  -moz-border-radius: (@grid * 9);
-  -webkit-border-radius: (@grid * 9);
+    width: (@grid * 2);
+    height: (@grid * 2);
+    border-width: (@grid * 8);
+    border-radius: (@grid * 9);
+    -moz-border-radius: (@grid * 9);
+    -webkit-border-radius: (@grid * 9);
 }
 .@{shape-selector} .css_char.s .top_circle { top: 0px; }
 .@{shape-selector} .css_char.s .bottom_circle { top: (@grid * 10); }
@@ -363,33 +377,35 @@
 .@{shape-selector} .css_char.s .left.neg,
 .@{shape-selector} .css_char.s .right.neg,
 .@{shape-selector} .css_char.question .neg {
-  width: (@grid * 9);
-  height: (@grid * 10);
-  top: (@grid * 9);
+    width: (@grid * 9);
+    height: (@grid * 10);
+    top: (@grid * 9);
 }
 .@{shape-selector} .css_char.s .right.neg {
-  left: (@grid * 9);
-  overflow: hidden;
+    left: (@grid * 9);
+    overflow: hidden;
 }
 .@{shape-selector} .css_char.s .right .stroke {
-  top: @grid;
-  left: -(@grid * 9);
+    top: @grid;
+    left: -(@grid * 9);
 }
 
 /***** T *****/
 
-.@{shape-selector} .css_char.t { width: (@grid * 20); }
+.@{shape-selector} .css_char.t {
+    width: (@grid * 20);
 
-.@{shape-selector} .css_char.t .cross {
-  width: (@grid * 20);
-  height: (@grid * 8);
-}
+    .cross {
+        width: (@grid * 20);
+        height: (@grid * 8);
+    }
 
-.@{shape-selector} .css_char.t .stem {
-  width: (@grid * 8);
-  height: (@grid * 24);
-  left: (@grid * 6);
-  top: (@grid * 4);
+    .stem {
+        width: (@grid * 8);
+        height: (@grid * 24);
+        left: (@grid * 6);
+        top: (@grid * 4);
+    }
 }
 
 /***** V & W *****/
@@ -407,67 +423,74 @@
 .@{shape-selector} .css_char.v .inside,
 .@{shape-selector} .css_char.w .inside_left,
 .@{shape-selector} .css_char.w .inside_right {
-  border-width: (@grid * 12) (@grid * 6) 0;
-  top: (@grid * -2);
+    border-width: (@grid * 12) (@grid * 6) 0;
+    top: (@grid * -2);
 }
+
+.@{shape-selector} .css_char.v .inside,
+.@{shape-selector} .css_char.w .inside_left { left: (@grid * 8); }
+
+.@{shape-selector} .css_char.w .inside_right { left: (@grid * 18); }
 
 /***** X *****/
 
-.@{shape-selector} .css_char.x { width: (@grid * 26); }
+.@{shape-selector} .css_char.x {
+    width: (@grid * 26);
 
-.@{shape-selector} .css_char.x .outside {
-  width: (@grid * 10);
-  border-width: (@grid * 14) (@grid * 8);
+    .outside {
+        width: (@grid * 10);
+        border-width: (@grid * 14) (@grid * 8);
+    }
+
+    .inside {
+        height: (@grid * 16);
+        border-width: (@grid * 8) (@grid * 4);
+        left: (@grid * 9);
+        top: (@grid * -2);
+    }
 }
-
-.@{shape-selector} .css_char.x .inside {
-  height: (@grid * 16);
-  border-width: (@grid * 8) (@grid * 4);
-  left: (@grid * 9);
-  top: (@grid * -2);
-}
-
 
 
 /***** Y *****/
 
-.@{shape-selector} .css_char.y {  width: (@grid * 26); }
+.@{shape-selector} .css_char.y {
+    width: (@grid * 26);
 
-.@{shape-selector} .css_char.y .outside { border-width: (@grid * 26) (@grid * 13) 0px; }
-
-.@{shape-selector} .css_char.y .inside {
-  border-width: (@grid * 10) (@grid * 5) 0;
-  top: (@grid * -2);
-  left: (@grid * 8);
-}
-
-.@{shape-selector} .css_char.y .fill {
-  width: (@grid * 8);
-  height: (@grid * 12);
-  left: (@grid * 9);
-  top: (@grid * 16);
+    .outside { border-width: (@grid * 26) (@grid * 13) 0px; }
+    .inside {
+        border-width: (@grid * 10) (@grid * 5) 0;
+        top: (@grid * -2);
+        left: (@grid * 8);
+    }
+    .fill {
+        width: (@grid * 8);
+        height: (@grid * 12);
+        left: (@grid * 9);
+        top: (@grid * 16);
+    }
 }
 
 
 
 /***** Z *****/
 
-.@{shape-selector} .css_char.z { width: (@grid * 24); }
+.@{shape-selector} .css_char.z {
+    width: (@grid * 24);
 
-.@{shape-selector} .css_char.z .fill {
-  width: (@grid * 24);
-  height: @font-size;
-}
-
-.@{shape-selector} .css_char.z .left {
-  border-width: (@grid * 24) (@grid * 12) 0 0;
-  top: (@grid * 8);
-  left: (@grid * -2);
-}
-.@{shape-selector} .css_char.z .right {
-  border-width: 0 0px (@grid * 24) (@grid * 12);
-  top: (@grid * -4);
-  left: (@grid * 14);
+    .fill {
+        width: (@grid * 24);
+        height: @font-size;
+    }
+    .left {
+        border-width: (@grid * 24) (@grid * 12) 0 0;
+        top: (@grid * 8);
+        left: (@grid * -2);
+    }
+    .right {
+        border-width: 0 0px (@grid * 24) (@grid * 12);
+        top: (@grid * -4);
+        left: (@grid * 14);
+    }
 }
 
 /***** ., !, & ? *****/
@@ -485,22 +508,30 @@
   -moz-border-radius: (@grid * 4);
   -webkit-border-radius: (@grid * 4);
 }
-.@{shape-selector} .css_char.question .dot { left: (@grid * 5);}
 
 .@{shape-selector} .css_char.exclam .line {
   width: (@grid * 8);
   height: (@grid * 19);
 }
 
-.@{shape-selector} .css_char.question .line {
-  width: (@grid * 8);
-  height: (@grid * 9);
-  left: (@grid * 5);
-  top: (@grid * 10);
+.@{shape-selector} .css_char.question {
+    .dot { left: (@grid * 5);}
+    .line {
+        width: (@grid * 8);
+        height: (@grid * 9);
+        left: (@grid * 5);
+        top: (@grid * 10);
+    }
 }
 
 /***** kerning pairs *****/
 .@{shape-selector} {
+    .a + .c { margin-left: -(@grid * 5); }
+
     .f + .a { margin-left: -(@grid * 6); }
-    .a + .c { margin-left: -(@grid * 4); }
+
+    .o + .v { margin-left: -(@grid * 3); }
+    .o + .w { margin-left: -(@grid * 4); }
+    .o + .x { margin-left: -(@grid * 3); }
+
 }
