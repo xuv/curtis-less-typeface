@@ -20,10 +20,6 @@ h1 {
   margin-bottom: 40px;
 }
 
-h1 .f + .a { margin-left: -12px; }
-h1 .a + .c { margin-left: -10px; }
-
-
 .gone { display: none;}
 
 fieldset {

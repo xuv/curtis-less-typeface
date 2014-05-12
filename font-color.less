@@ -1,0 +1,21 @@
+.@{color-selector} {
+    text-indent: -9999px;
+
+    .css_char {
+        background: @background-color;
+
+        .fill { background: @positive-color; }
+        .neg { background: @negative-color; }
+        .stroke,
+        .neg_stroke,
+        .split_vert,
+        .split_horiz,
+        .split_horiz_pos,
+        .split_horiz_neg { border: 0px solid; }
+        .stroke { border-color: @positive-color; }
+        .split_vert { border-color: @positive-color transparent; }
+        .split_horiz { border-color: @negative-color transparent; }
+        .split_horiz_pos { border-color: transparent @positive-color; }
+        .split_horiz_neg { border-color: transparent @negative-color; }
+    }
+}
