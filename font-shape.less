@@ -26,10 +26,11 @@
 .word {
     display: block;
     float: left;
-    padding-right: min( 40, (@grid * 14 )px);
 }
 
 /********** font size @{shape-selector} **********/
+
+.@{shape-selector} .word { padding-right: min( 60px, (@grid * 14 )); }
 
 .@{shape-selector} .css_char {
     height: @font-size;
