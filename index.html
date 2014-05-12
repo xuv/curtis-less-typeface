@@ -7,6 +7,7 @@
 
   <link rel="stylesheet" type="text/css" href="curtis.css" />
   <link rel="stylesheet/less" type="text/css" href="font-shape.less" />
+  <link rel="stylesheet/less" type="text/css" href="font-color.less" />
 
 
 </head>
@@ -17,7 +18,7 @@
 
   <h1 class="curtis size56 standard clearfix">
       <span class="word"><span class="css_char c">C<span class="stroke"></span><span class="neg"></span></span><span class="css_char u">U<span class="stroke"></span></span><span class="css_char r">R<span class="inside split_vert"></span><span class="outside split_vert"></span><span class="stroke"></span><span class="fill"></span></span><span class="css_char t">T<span class="stem fill"></span><span class="cross fill"></span></span><span class="css_char i">I<span class="fill"></span></span><span class="css_char s">S<span class="bottom_circle stroke"></span><span class="left neg"></span><span class="top_circle stroke"></span><span class="right neg"><span class="stroke"></span></span></span></span>
-      <span class="word"><span class="css_char c">C<span class="stroke"></span><span class="neg"></span></span><span class="css_char s">S<span class="bottom_circle stroke"></span><span class="left neg"></span><span class="top_circle stroke"></span><span class="right neg"><span class="stroke"></span></span></span><span class="css_char s">S<span class="bottom_circle stroke"></span><span class="left neg"></span><span class="top_circle stroke"></span><span class="right neg"><span class="stroke"></span></span></span></span>
+      <span class="word"><span class="css_char l">L<span class="stroke"></span></span><span class="css_char e">E<span class="stroke"></span><span class="fill"></span></span><span class="css_char s">S<span class="bottom_circle stroke"></span><span class="left neg"></span><span class="top_circle stroke"></span><span class="right neg"><span class="stroke"></span></span></span><span class="css_char s">S<span class="bottom_circle stroke"></span><span class="left neg"></span><span class="top_circle stroke"></span><span class="right neg"><span class="stroke"></span></span></span></span>
       <span class="word"><span class="css_char t">T<span class="stem fill"></span><span class="cross fill"></span></span><span class="css_char y">Y<span class="outside split_vert"></span><span class="inside split_horiz"></span><span class="fill"></span></span><span class="css_char p">P<span class="stroke"></span><span class="fill"></span></span><span class="css_char e">E<span class="stroke"></span><span class="fill"></span></span><span class="css_char f">F<span class="stroke"></span><span class="fill"></span></span><span class="css_char a">A<span class="outside split_vert"></span><span class="inside split_horiz"></span><span class="bar fill"></span></span><span class="css_char c">C<span class="stroke"></span><span class="neg"></span></span><span class="css_char e">E<span class="stroke"></span><span class="fill"></span></span></span>
   </h1>
 
@@ -53,8 +54,6 @@
 
 
     <p>This design pattern is released under a <a href="http://creativecommons.org/licenses/by/3.0/us/">Creative Commons Attribution License</a>.  You are free to share and remix this work.</p>
-
-    <p>&mdash; <a href="http://desandro.com">Dave DeSandro</a> & <a href="http://xuv.be">Julien Deswaef</a> </p>
 
   </div>
 
@@ -110,6 +109,27 @@
 
     </fieldset>
 
+    <fieldset id="custom">
+        <legend>Custom values</legend>
+        <ul>
+            <li>
+                <label for="size-custom">Font size (in px): </label>
+                <input type="number" value="100" id="grid" />
+            </li>
+            <li>
+                <label for="bg-color">Background: </label>
+                <input type="text" value="none" id="bg-color" />
+            </li>
+            <li>
+                <label for="positive">Positive: </label>
+                <input type="text" value="#000" id="positive" />
+            </li>
+            <li>
+                <label for="negative">Negative: </label>
+                <input type="text" value="#EEE" id="negative" />
+            </li>
+        </ul>
+      </fieldset>
   </div>
 
   <div id="demo" class="curtis size140 standard tk_proxima_nova">
@@ -558,7 +578,16 @@
 
 
 <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<!-- set options before less.js script -->
 <script>
+less = {
+  env: "development"
+};
+</script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/1.7.0/less.min.js"></script>
+<script>
+// less.watch();
+
 $(function(){
 
   $('.gone').removeClass('gone');
@@ -567,7 +596,8 @@ $(function(){
 
   $demo.removeClass('size28').removeClass('size56')
         .removeClass('size140').removeClass('size280')
-        .removeClass('standard').removeClass('inspect');
+        .removeClass('standard').removeClass('inspect')
+        .removeClass('custom');
 
   var fontsize = $('#fontsizes input:checked').val();
   var display =  $('#display input:checked').val();
@@ -575,30 +605,41 @@ $(function(){
 
   $('#fontsizes input').click(function(){
     $demo.removeClass('size28').removeClass('size56')
-          .removeClass('size140').removeClass('size280');
+          .removeClass('size140').removeClass('size280').removeClass('custom');
     var fontsize = $(this).val();
     $demo.addClass( fontsize );
   });
 
   $('#display input').click(function(){
-    $demo.removeClass('standard').removeClass('inspect');
+    $demo.removeClass('standard').removeClass('inspect').removeClass('custom');
     var display = $(this).val();
     $demo.addClass( display );
   });
 
+  $("#custom input").keyup(function(event){
+    if(event.keyCode == 13){
+        $(this).click();
+    }
+  });
+
+  $('#custom input').click(function(){
+    $demo.removeClass('size28').removeClass('size56')
+        .removeClass('size140').removeClass('size280')
+        .removeClass('standard').removeClass('inspect')
+        .removeClass('custom');
+    less.modifyVars({
+        '@background-color': $('#bg-color').val(),
+        '@positive-color': $('#positive').val(),
+        '@negative-color': $('#negative').val(),
+        '@grid': ($('#grid').val()/28)+'px',
+        '@color-selector': 'custom',
+        '@shape-selector': 'custom'
+    });
+
+    $demo.addClass('custom');
+  });
 });
 </script>
-
-
-<!-- set options before less.js script -->
-<script>
-  less = {
-    env: "development"
-  };
-</script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/1.7.0/less.min.js"></script>
-<script>less.watch();</script>
-
 
 </div>
 
