@@ -89,8 +89,12 @@ label {
 
 /*** Styles for demo page font ***/
 
-.color-mixin(@color-selector, @background-color, @positive-color, @negative-color){
+.color-mixin(@selector, @bg-color, @pos-color, @neg-color){
     @import "font-color.less";
+    @color-selector: @selector;
+    @background-color: @bg-color;
+    @positive-color: @pos-color;
+    @negative-color: @neg-color;
 }
 
 .color-mixin(standard, none, #000, #EEE);

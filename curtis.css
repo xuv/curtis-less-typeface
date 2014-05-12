@@ -165,9 +165,11 @@ legend {
 .word {
   display: block;
   float: left;
-  padding-right: 40;
 }
 /********** font size @{shape-selector} **********/
+.size280 .word {
+  padding-right: 60px;
+}
 .size280 .css_char {
   height: 280px;
   margin: 0 40px 20px 0;
@@ -611,14 +613,33 @@ legend {
 .size280 .f + .a {
   margin-left: -60px;
 }
+.size280 .f + .o {
+  margin-left: -10px;
+}
 .size280 .o + .v {
-  margin-left: -30px;
+  margin-left: -50px;
 }
 .size280 .o + .w {
-  margin-left: -40px;
+  margin-left: -50px;
 }
 .size280 .o + .x {
-  margin-left: -30px;
+  margin-left: -40px;
+}
+.size280 .p + .s,
+.size280 .r + .s {
+  margin-left: -10px;
+}
+.size280 .r + .o {
+  margin-left: -10px;
+}
+.size280 .r + .t {
+  margin-left: -20px;
+}
+.size280 .v + .e {
+  margin-left: -10px;
+}
+.size280 .w + .n {
+  margin-left: -15px;
 }
 .css_char {
   position: relative;
@@ -638,9 +659,11 @@ legend {
 .word {
   display: block;
   float: left;
-  padding-right: 40;
 }
 /********** font size @{shape-selector} **********/
+.size140 .word {
+  padding-right: 60px;
+}
 .size140 .css_char {
   height: 140px;
   margin: 0 20px 10px 0;
@@ -1084,14 +1107,33 @@ legend {
 .size140 .f + .a {
   margin-left: -30px;
 }
+.size140 .f + .o {
+  margin-left: -5px;
+}
 .size140 .o + .v {
-  margin-left: -15px;
+  margin-left: -25px;
 }
 .size140 .o + .w {
-  margin-left: -20px;
+  margin-left: -25px;
 }
 .size140 .o + .x {
-  margin-left: -15px;
+  margin-left: -20px;
+}
+.size140 .p + .s,
+.size140 .r + .s {
+  margin-left: -5px;
+}
+.size140 .r + .o {
+  margin-left: -5px;
+}
+.size140 .r + .t {
+  margin-left: -10px;
+}
+.size140 .v + .e {
+  margin-left: -5px;
+}
+.size140 .w + .n {
+  margin-left: -7.5px;
 }
 .css_char {
   position: relative;
@@ -1111,9 +1153,11 @@ legend {
 .word {
   display: block;
   float: left;
-  padding-right: 28px;
 }
 /********** font size @{shape-selector} **********/
+.size56 .word {
+  padding-right: 28px;
+}
 .size56 .css_char {
   height: 56px;
   margin: 0 8px 4px 0;
@@ -1557,14 +1601,33 @@ legend {
 .size56 .f + .a {
   margin-left: -12px;
 }
+.size56 .f + .o {
+  margin-left: -2px;
+}
 .size56 .o + .v {
-  margin-left: -6px;
+  margin-left: -10px;
 }
 .size56 .o + .w {
-  margin-left: -8px;
+  margin-left: -10px;
 }
 .size56 .o + .x {
-  margin-left: -6px;
+  margin-left: -8px;
+}
+.size56 .p + .s,
+.size56 .r + .s {
+  margin-left: -2px;
+}
+.size56 .r + .o {
+  margin-left: -2px;
+}
+.size56 .r + .t {
+  margin-left: -4px;
+}
+.size56 .v + .e {
+  margin-left: -2px;
+}
+.size56 .w + .n {
+  margin-left: -3px;
 }
 .css_char {
   position: relative;
@@ -1584,9 +1647,11 @@ legend {
 .word {
   display: block;
   float: left;
-  padding-right: 14px;
 }
 /********** font size @{shape-selector} **********/
+.size28 .word {
+  padding-right: 14px;
+}
 .size28 .css_char {
   height: 28px;
   margin: 0 4px 2px 0;
@@ -2030,14 +2095,33 @@ legend {
 .size28 .f + .a {
   margin-left: -6px;
 }
+.size28 .f + .o {
+  margin-left: -1px;
+}
 .size28 .o + .v {
-  margin-left: -3px;
+  margin-left: -5px;
 }
 .size28 .o + .w {
-  margin-left: -4px;
+  margin-left: -5px;
 }
 .size28 .o + .x {
-  margin-left: -3px;
+  margin-left: -4px;
+}
+.size28 .p + .s,
+.size28 .r + .s {
+  margin-left: -1px;
+}
+.size28 .r + .o {
+  margin-left: -1px;
+}
+.size28 .r + .t {
+  margin-left: -2px;
+}
+.size28 .v + .e {
+  margin-left: -1px;
+}
+.size28 .w + .n {
+  margin-left: -1.5px;
 }
 .inspect {
   background: url(grid.png);
