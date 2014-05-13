@@ -528,22 +528,34 @@
 /***** kerning pairs *****/
 .@{shape-selector} {
     .a + .c { margin-left: -(@grid * 5); }
+    .a + .z { margin-left: -(@grid * 1); }
+
+    .d + .o,
+    .o + .g { margin-left: -(@grid * 1); }
+
+    .e + .f { margin-left: (@grid * 1); }
 
     .f + .a { margin-left: -(@grid * 6); }
+    .f + .g,
     .f + .o { margin-left: -(@grid * 1); }
 
-    .o + .v { margin-left: -(@grid * 5); }
+    .l + .a { margin-left: -(@grid * 1); }
+
+    .o + .v,
     .o + .w { margin-left: -(@grid * 5); }
-    .o + .x { margin-left: -(@grid * 4); }
+    .o + .x { margin-left: -(@grid * 4.5); }
 
     .p + .s,
     .r + .s { margin-left: -(@grid * 1); }
 
-    .r + .o { margin-left: -(@grid * 1); }
+    .r + .o { margin-left: -(@grid * 2); }
     .r + .t { margin-left: -(@grid * 2); }
+
+    .u + .i { margin-left: (@grid * 1); }
 
     .v + .e { margin-left: -(@grid * 1); }
 
     .w + .n { margin-left: -(@grid * 1.5); }
 
+    .z + .y { margin-left: -(@grid * 1)};
 }

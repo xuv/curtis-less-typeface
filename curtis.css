@@ -618,36 +618,54 @@ legend {
 .size280 .a + .c {
   margin-left: -50px;
 }
+.size280 .a + .z {
+  margin-left: -10px;
+}
+.size280 .d + .o,
+.size280 .o + .g {
+  margin-left: -10px;
+}
+.size280 .e + .f {
+  margin-left: 10px;
+}
 .size280 .f + .a {
   margin-left: -60px;
 }
+.size280 .f + .g,
 .size280 .f + .o {
   margin-left: -10px;
 }
-.size280 .o + .v {
-  margin-left: -50px;
+.size280 .l + .a {
+  margin-left: -10px;
 }
+.size280 .o + .v,
 .size280 .o + .w {
   margin-left: -50px;
 }
 .size280 .o + .x {
-  margin-left: -40px;
+  margin-left: -45px;
 }
 .size280 .p + .s,
 .size280 .r + .s {
   margin-left: -10px;
 }
 .size280 .r + .o {
-  margin-left: -10px;
+  margin-left: -20px;
 }
 .size280 .r + .t {
   margin-left: -20px;
+}
+.size280 .u + .i {
+  margin-left: 10px;
 }
 .size280 .v + .e {
   margin-left: -10px;
 }
 .size280 .w + .n {
   margin-left: -15px;
+}
+.size280 .z + .y {
+  margin-left: -10px;
 }
 .css_char {
   position: relative;
@@ -1112,36 +1130,54 @@ legend {
 .size140 .a + .c {
   margin-left: -25px;
 }
+.size140 .a + .z {
+  margin-left: -5px;
+}
+.size140 .d + .o,
+.size140 .o + .g {
+  margin-left: -5px;
+}
+.size140 .e + .f {
+  margin-left: 5px;
+}
 .size140 .f + .a {
   margin-left: -30px;
 }
+.size140 .f + .g,
 .size140 .f + .o {
   margin-left: -5px;
 }
-.size140 .o + .v {
-  margin-left: -25px;
+.size140 .l + .a {
+  margin-left: -5px;
 }
+.size140 .o + .v,
 .size140 .o + .w {
   margin-left: -25px;
 }
 .size140 .o + .x {
-  margin-left: -20px;
+  margin-left: -22.5px;
 }
 .size140 .p + .s,
 .size140 .r + .s {
   margin-left: -5px;
 }
 .size140 .r + .o {
-  margin-left: -5px;
+  margin-left: -10px;
 }
 .size140 .r + .t {
   margin-left: -10px;
+}
+.size140 .u + .i {
+  margin-left: 5px;
 }
 .size140 .v + .e {
   margin-left: -5px;
 }
 .size140 .w + .n {
   margin-left: -7.5px;
+}
+.size140 .z + .y {
+  margin-left: -5px;
 }
 .css_char {
   position: relative;
@@ -1606,36 +1642,54 @@ legend {
 .size56 .a + .c {
   margin-left: -10px;
 }
+.size56 .a + .z {
+  margin-left: -2px;
+}
+.size56 .d + .o,
+.size56 .o + .g {
+  margin-left: -2px;
+}
+.size56 .e + .f {
+  margin-left: 2px;
+}
 .size56 .f + .a {
   margin-left: -12px;
 }
+.size56 .f + .g,
 .size56 .f + .o {
   margin-left: -2px;
 }
-.size56 .o + .v {
-  margin-left: -10px;
+.size56 .l + .a {
+  margin-left: -2px;
 }
+.size56 .o + .v,
 .size56 .o + .w {
   margin-left: -10px;
 }
 .size56 .o + .x {
-  margin-left: -8px;
+  margin-left: -9px;
 }
 .size56 .p + .s,
 .size56 .r + .s {
   margin-left: -2px;
 }
 .size56 .r + .o {
-  margin-left: -2px;
+  margin-left: -4px;
 }
 .size56 .r + .t {
   margin-left: -4px;
+}
+.size56 .u + .i {
+  margin-left: 2px;
 }
 .size56 .v + .e {
   margin-left: -2px;
 }
 .size56 .w + .n {
   margin-left: -3px;
+}
+.size56 .z + .y {
+  margin-left: -2px;
 }
 .css_char {
   position: relative;
@@ -2100,36 +2154,54 @@ legend {
 .size28 .a + .c {
   margin-left: -5px;
 }
+.size28 .a + .z {
+  margin-left: -1px;
+}
+.size28 .d + .o,
+.size28 .o + .g {
+  margin-left: -1px;
+}
+.size28 .e + .f {
+  margin-left: 1px;
+}
 .size28 .f + .a {
   margin-left: -6px;
 }
+.size28 .f + .g,
 .size28 .f + .o {
   margin-left: -1px;
 }
-.size28 .o + .v {
-  margin-left: -5px;
+.size28 .l + .a {
+  margin-left: -1px;
 }
+.size28 .o + .v,
 .size28 .o + .w {
   margin-left: -5px;
 }
 .size28 .o + .x {
-  margin-left: -4px;
+  margin-left: -4.5px;
 }
 .size28 .p + .s,
 .size28 .r + .s {
   margin-left: -1px;
 }
 .size28 .r + .o {
-  margin-left: -1px;
+  margin-left: -2px;
 }
 .size28 .r + .t {
   margin-left: -2px;
+}
+.size28 .u + .i {
+  margin-left: 1px;
 }
 .size28 .v + .e {
   margin-left: -1px;
 }
 .size28 .w + .n {
   margin-left: -1.5px;
+}
+.size28 .z + .y {
+  margin-left: -1px;
 }
 .inspect {
   background: url(grid.png);
