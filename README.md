@@ -3,7 +3,7 @@ Curtis LESS Typeface
 
 **Curtis** is the name given by *Dave DeSandro* to a family of geometric sans-serif fonts. Other incarnations exist as Fontstructions: [Curtis Heavy](http://fontstruct.fontshop.com/fontstructions/show/180805) and [Curtis Pixel 14](http://fontstruct.fontshop.com/fontstructions/show/curtis_pixel_14).
 
-The **Curtis LESS version**, which is based on the [Curtis CSS font](http://desandro.github.io/curtis-css-typeface), takes form in CSS compiled from LESS for added parametric options. All shapes are rendered in the browser, using a combination of background color, border width, border radius, and a heavily reliance on absolute/relative positioning.
+The **Curtis LESS Typeface**, which is based on the [Curtis CSS font](http://desandro.github.io/curtis-css-typeface), takes form in CSS compiled from LESS for added parametric options. All shapes are rendered in the browser, using a combination of background color, border width, border radius, and a heavily reliance on absolute/relative positioning.
 
 Each character is wrapped in a `<span>` and then depending on the complexity of that character, more empty `<span>` elements are added to the markup to render each shape. Here's the markup for R:
 
