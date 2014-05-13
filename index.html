@@ -597,7 +597,7 @@ $(function(){
   $demo.removeClass('size28').removeClass('size56')
         .removeClass('size140').removeClass('size280')
         .removeClass('standard').removeClass('inspect')
-        .removeClass('custom');
+        .removeClass('shape-custom').removeClass('color-custom');
 
   var fontsize = $('#fontsizes input:checked').val();
   var display =  $('#display input:checked').val();
@@ -605,13 +605,13 @@ $(function(){
 
   $('#fontsizes input').click(function(){
     $demo.removeClass('size28').removeClass('size56')
-          .removeClass('size140').removeClass('size280').removeClass('custom');
+          .removeClass('size140').removeClass('size280').removeClass('shape-custom');
     var fontsize = $(this).val();
     $demo.addClass( fontsize );
   });
 
   $('#display input').click(function(){
-    $demo.removeClass('standard').removeClass('inspect').removeClass('custom');
+    $demo.removeClass('standard').removeClass('inspect').removeClass('color-custom');
     var display = $(this).val();
     $demo.addClass( display );
   });
@@ -626,17 +626,17 @@ $(function(){
     $demo.removeClass('size28').removeClass('size56')
         .removeClass('size140').removeClass('size280')
         .removeClass('standard').removeClass('inspect')
-        .removeClass('custom');
+        .removeClass('shape-custom').removeClass('color-custom');
     less.modifyVars({
         '@background-color': $('#bg-color').val(),
         '@positive-color': $('#positive').val(),
         '@negative-color': $('#negative').val(),
         '@grid': ($('#grid').val()/28)+'px',
-        '@color-selector': 'custom',
-        '@shape-selector': 'custom'
+        '@color-selector': 'color-custom',
+        '@shape-selector': 'shape-custom'
     });
 
-    $demo.addClass('custom');
+    $demo.addClass('shape-custom').addClass('color-custom');
   });
 });
 </script>
